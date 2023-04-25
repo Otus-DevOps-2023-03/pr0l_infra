@@ -75,3 +75,7 @@ Enter passphrase for key '~/.ssh/bastion':
 Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-147-generic x86_64)
 bastion@someinternalhost:~$
 ```
+
+
+bastion_IP = 84.201.167.163
+someinternalhost_IP = 10.129.0.27
