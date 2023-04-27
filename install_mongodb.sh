@@ -6,4 +6,7 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org
 sudo systemctl start mongodb
 sudo systemctl enable mongodb
+sudo systemctl start mongod
+sudo systemctl enable mongod
 sudo systemctl status mongodb | grep active
+sudo systemctl status mongod | grep active
