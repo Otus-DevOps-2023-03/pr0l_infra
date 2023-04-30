@@ -1,0 +1,11 @@
+{
+	"key": "/Users/artemsmirnov/Documents/otus/key.json",
+	"folder_id": "b1gprasp0s87tusk5021",
+	"image": "ubuntu-1604-lts",
+	"disk_size": "10",
+	"memory_gb": "2",
+	"disk_name": "reddit-full",
+	"image_family": "reddit-full",
+	"subnet_id": "e9bkevu73it9gvhhvj41",
+	"zone_id": "ru-central1-a"
+}
