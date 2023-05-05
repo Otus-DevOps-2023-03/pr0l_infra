@@ -9,3 +9,5 @@ private_key_path         = "~/.ssh/appuser"
 count_app                = 1
 app_disk_image           = "fd8sfd"
 db_disk_image            = "fd8bme"
+access_key               = "YCA0U"
+secret_key               = "YCOHiw"
