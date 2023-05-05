@@ -1,0 +1,11 @@
+cloud_id                 = "b1gnq2phc4pk5uuig49i"
+folder_id                = "b1gprasp0s87tusk5021"
+zone                     = "ru-central1-a"
+image_id                 = "fd8lp396uilrc0klaie6"
+public_key_path          = "~/.ssh/otus.pub"
+subnet_id                = "e9bkuejfm2vp9va8ootb"
+service_account_key_file = "/Users/artemsmirnov/Documents/otus/key.json"
+private_key_path         = "~/.ssh/otus"
+count_app                = 1
+app_disk_image           = "fd8u2geej1fgnn1mcsfd"
+db_disk_image            = "fd89iq3gm3cu1f1vbbme"

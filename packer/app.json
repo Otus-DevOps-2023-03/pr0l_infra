@@ -1,0 +1,32 @@
+{
+    "builders": [
+        {
+            "type": "yandex",
+            "service_account_key_file": "/Users/artemsmirnov/Documents/otus/key.json",
+            "folder_id": "b1gprasp0s87tusk5021",
+            "source_image_family": "ubuntu-1604-lts",
+            "image_name": "reddit-app-{{timestamp}}",
+            "image_family": "reddit-app-base",
+            "ssh_username": "ubuntu",
+            "platform_id": "standard-v1",
+            "use_ipv4_nat": "True",
+            "zone": "ru-central1-a",
+            "instance_cores": "2",
+            "instance_mem_gb": "4"
+        }
+    ],
+    "provisioners": [
+        {
+            "type":"shell",
+            "inline":[
+                "sleep 30",
+                "sudo apt update && sudo apt -y -q upgrade"
+            ]
+        },
+        {
+            "type": "shell",
+            "script": "scripts/install_ruby.sh",
+            "execute_command": "sudo {{.Path}}"
+        }
+    ]
+}
