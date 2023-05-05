@@ -6,6 +6,5 @@ public_key_path          = "~/.ssh/appuser.pub"
 subnet_id                = "e9bj41"
 service_account_key_file = "/key.json"
 private_key_path         = "~/.ssh/appuser"
-count_app                = 1
 app_disk_image           = "fd8sfd"
 db_disk_image            = "fd8bme"
