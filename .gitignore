@@ -1,6 +1,12 @@
+.DS_Store
+.terraform
+.terraform.lock.hcl
+.terraformrc
 variables.json
 *.tfstate
 *.tfstate.*.backup
 *.tfstate.backup
 *.tfvars
 .terraform/
+key.json
+balancer_key.json

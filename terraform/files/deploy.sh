@@ -1,4 +1,5 @@
 #!/bin/bash
+sleep 60
 set -e
 APP_DIR=${1:-$HOME}
 sudo apt-get install -y git
