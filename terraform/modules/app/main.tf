@@ -38,6 +38,11 @@ resource "yandex_compute_instance" "app" {
     private_key = file(var.private_key_path)
   }
 
+  provisioner "remote-exec" {
+    inline = [
+      "echo \"DATABASE_URL=${var.address_db}\" >> /tmp/puma.env"
+    ]
+  }
   provisioner "file" {
     source      = "${path.module}/files/puma.service"
     destination = "/tmp/puma.service"
