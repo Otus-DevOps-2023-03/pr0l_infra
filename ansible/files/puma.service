@@ -3,8 +3,8 @@ Description=Puma HTTP Server
 After=network.target
 
 [Service]
-#EnvironmentFile=/tmp/puma.env
 Type=simple
+EnvironmentFile=/home/ubuntu/db_config
 User=ubuntu
 WorkingDirectory=/home/ubuntu/reddit
 ExecStart=/bin/bash -lc 'puma'

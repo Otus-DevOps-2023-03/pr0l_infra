@@ -1,0 +1,13 @@
+---
+- name: Deploy app
+  hosts: all
+  tasks:
+    - name: "Soft install"
+      become: true
+      ansible.builtin.apt:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - ruby-full
+        - ruby-bundler
+        - build-essential

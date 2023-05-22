@@ -3,6 +3,7 @@
 .terraform.lock.hcl
 .terraformrc
 variables.json
+./packer/variables.json
 *.tfstate
 *.tfstate.*.backup
 *.tfstate.backup
@@ -10,3 +11,6 @@ variables.json
 .terraform/
 key.json
 balancer_key.json
+*.retry
+./packer/key.json
+.vscode
