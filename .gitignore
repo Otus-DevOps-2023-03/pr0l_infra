@@ -13,4 +13,4 @@ key.json
 balancer_key.json
 *.retry
 ./packer/key.json
-.vscode
+.vscode/
