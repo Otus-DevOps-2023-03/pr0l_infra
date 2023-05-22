@@ -1,5 +1,4 @@
 ---
-
 - name: Config DB
   hosts: all
   become: true
