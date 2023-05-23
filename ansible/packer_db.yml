@@ -3,7 +3,7 @@
   hosts: all
   become: true
   tasks:
-    - name: Add an Apt signing key, uses whichever key is at the URL
+    - name: Add an Apt signing key
       ansible.builtin.apt_key:
         url: https://www.mongodb.org/static/pgp/server-3.2.asc
         state: present
@@ -12,12 +12,10 @@
         repo: deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse
         state: present
     - name: Install mongodb-org
-      become: true
       ansible.builtin.apt:
         name: mongodb-org
         state: present
     - name: Enable mongodb-org
-      become: true
       ansible.builtin.systemd:
         name: mongod
         enabled: true

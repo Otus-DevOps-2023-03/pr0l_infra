@@ -2,7 +2,7 @@
 - name: Deploy app
   hosts: all
   tasks:
-    - name: "Soft install"
+    - name: Soft install
       become: true
       ansible.builtin.apt:
         name: "{{ item }}"
