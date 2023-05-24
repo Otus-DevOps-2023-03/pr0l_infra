@@ -4,8 +4,8 @@ terraform {
     bucket     = "bucket-otus-asmirnov"
     region     = "ru-central1"
     key        = "terraform.tfstate"
-    access_key = "YCAYdt"
-    secret_key = "YCOL8b"
+    access_key = "YCAFnG"
+    secret_key = "YCMqLA"
     skip_region_validation      = true
     skip_credentials_validation = true
   }
