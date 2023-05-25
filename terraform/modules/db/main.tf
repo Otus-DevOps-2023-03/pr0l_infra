@@ -37,7 +37,7 @@ resource "yandex_compute_instance" "db" {
     # путь до приватного ключа
     private_key = file(var.private_key_path)
   }
-  provisioner "remote-exec" {
-    script = "${path.module}/files/deploy.sh"
-  }
+  # provisioner "remote-exec" {
+  #   script = "${path.module}/files/deploy.sh"
+  # }
 }

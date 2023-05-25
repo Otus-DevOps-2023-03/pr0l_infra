@@ -7,5 +7,5 @@ subnet_id                = "e9bkuejfm2vp9va8ootb"
 service_account_key_file = "/Users/artemsmirnov/Documents/otus/key.json"
 private_key_path         = "~/.ssh/otus"
 count_app                = 1
-app_disk_image           = "fd8u2geej1fgnn1mcsfd"
-db_disk_image            = "fd89iq3gm3cu1f1vbbme"
+app_disk_image           = "fd83j85sk5j5osgrlvi0"
+db_disk_image            = "fd8tq8olp43j4g162jrs"
