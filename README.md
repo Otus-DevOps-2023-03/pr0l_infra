@@ -1,5 +1,6 @@
 # pr0l_infra
 ## HW-13 Ansible-4
+
 Выполненные работы Установка vagrant Описываем локальную инфраструктуру в Vagrantfile Дорабатываем роли и учимся использовать provisioner Переделываем deploy.yml Проверяем сборку в vagrant Устанавливаем pip, а затем с помощью его virtualenv Устанавливаем все необходимые пакеты pip install -r requirements.txt Создаем заготовку molecule с помощью команды molecule init scenario --scenario-name default -r db -d vagrant Добавляем собственнные тесты Собираем и тестируем нашу конфигурацию
 
 Самостоятельное задание:
