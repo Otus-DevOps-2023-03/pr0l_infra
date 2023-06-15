@@ -1,25 +1,26 @@
 ---
-- name: deploy app
+- name: Deploy App
   hosts: app
   tasks:
-    - name: Git install
-      become: true
+    - name: install git
+      become: yes
       apt:
         name: git
         state: present
-    - name: Fetch the latest version of application code
+
+    - name: fetch
       git:
         repo: 'https://github.com/express42/reddit.git'
-        dest: /home/ubuntu/reddit
-        version: monolith # <-- Указываем нужную ветку
-      notify: reload puma
+        dest: /home/{{deploy_user}}/reddit
+        version: monolith
+      notify: restart puma
+
     - name: Bundle install
       bundler:
         state: present
-        chdir: /home/ubuntu/reddit # <-- В какой директории выполнить команду bundle
+        chdir: /home/{{deploy_user}}/reddit
+
   handlers:
-  - name: reload puma
-    become: true
-    systemd:
-      name: puma
-      state: restarted
+    - name: restart puma
+      become: true
+      systemd: name=puma state=restarted
